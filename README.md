@@ -4,16 +4,28 @@
 
 A shared soundboard. �
 
+## Dependencies
+
+### Global
+`npm install -g webpack`
+
+### Local
+npm install
+
 ## Development
 
-Clone this repo, make sure you have node 6 or higher. Then run:
+Clone this repo, make sure you have node 6 or higher.
 
-```
-npm install
-npm start
-```
+If you want to run a dev build with a watcher:
+`npm run watch`
 
-You can now start coding 😎. When you make a pull request it will be automatically built and deployed after it is merged.
+If you want to run a production build
+`npm run build`
+
+To start a local webserver
+`npm start`
+
+You can now start coding. When you make a pull request it will be automatically built and deployed after it is merged.
 
 ## Adding new sounds
 
