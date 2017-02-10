@@ -864,8 +864,12 @@
         "title": "Om koekjes te rapsen"
       },
       {
-        "name": "Raps!",
-        "title": "raps"
+        "name": "raps",
+        "title": "Raps!"
+      },
+      {
+        "name": "gewoon-patat",
+        "title": "Gewoon patat mayonaise!"
       }
     ]
   },
