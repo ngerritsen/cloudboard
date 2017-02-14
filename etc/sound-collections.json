@@ -752,10 +752,6 @@
         "title": "Maat wat doe je"
       },
       {
-        "name": "man-man-man",
-        "title": "Man man man"
-      },
-      {
         "name": "mijn-broer-in-de-oorlog-van-de-verkeerde-kant",
         "title": "Mijn broer in de oorlog van de verkeerde kant"
       },
@@ -1616,6 +1612,11 @@
         "name": "langejongens",
         "title": "Lange jongens"
       },
+      ,
+      {
+        "name": "man-man-man",
+        "title": "Man man man"
+      },
       {
         "name": "manmanmanprullenbakken",
         "title": "Man man man prullenbakken"
@@ -1665,6 +1666,10 @@
       {
         "name": "wat-denk-je-zelf",
         "title": "Wat denk je zelf?"
+      },
+      {
+        "name": "eigen-huis-en-tuin",
+        "title": "Eigen huis en tuin"
       }
     ]
   }
