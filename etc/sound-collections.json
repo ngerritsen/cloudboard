@@ -1643,6 +1643,56 @@
     ]
   },
   {
+    "name": "zendamateur",
+    "title": "Gelicentieerd Zendamateur",
+    "sounds": [
+      {
+        "name": "8-punten-3-strepen",
+        "title": "8 punten, 3 strepen"
+      },
+      {
+        "name": "eikel-en-lul",
+        "title": "Eikel van maken en lul"
+      },
+      {
+        "name": "eikel-ben-jij",
+        "title": "Eikel ben jij"
+      },
+      {
+        "name": "je-bent-een-eikel-een-lul",
+        "title": "Je bent een eikel, een lul"
+      },
+      {
+        "name": "gelicentieerd-radio-zendamateur",
+        "title": "Gelicentieerd radiozendamateur"
+      },
+      {
+        "name": "godverdomme-nog-moal",
+        "title": "Godverdomme nog moal"
+      },
+      {
+        "name": "ben-je-nou-zo-dom",
+        "title": "Ben je nou zo dom?"
+      },
+      {
+        "name": "dat-jij-geen-verstand-hebt",
+        "title": "Dat jij geen verstand hebt"
+      },
+      {
+        "name": "klap-voor-je-kanis",
+        "title": "Klap voor je kanis"
+      },
+      {
+        "name": "we-gaan-niet-slaan",
+        "title": "We gaan niet slaan"
+      },
+      {
+        "name": "we-gaan-wel-slaan",
+        "title": "We gaan wel slaan"
+      }
+    ]
+  },
+  {
     "name": "other",
     "title": "Other",
     "sounds": [
