@@ -866,6 +866,14 @@
       {
         "name": "gewoon-patat",
         "title": "Gewoon patat mayonaise!"
+      },
+      {
+        "name": "meer-of-minder",
+        "title": "Meer of minder?"
+      },
+      {
+        "name": "minder-minder-minder",
+        "title": "Minder minder minder"
       }
     ]
   },
@@ -1690,6 +1698,200 @@
         "name": "we-gaan-wel-slaan",
         "title": "We gaan wel slaan"
       }
+    ]
+  },
+  {
+    "name": "fietsopa",
+    "title": "Fietsopa",
+    "sounds": [
+        {
+          "name": "bye-bye-daddy",
+          "title": "Bye bye daddy"
+        },
+        {
+          "name": "cum-in-face",
+          "title": "Cum in face"
+        },
+        {
+          "name": "cut-your-fingers",
+          "title": "Cut your fingers"
+        },
+        {
+          "name": "directly-cloths-off",
+          "title": "Directly cloths off"
+        },
+        {
+          "name": "dont-do-it",
+          "title": "Don't do it"
+        },
+        {
+          "name": "hello",
+          "title": "Hello"
+        },
+        {
+          "name": "help-me",
+          "title": "Help me"
+        },
+        {
+          "name": "here",
+          "title": "Here"
+        },
+        {
+          "name": "horny",
+          "title": "Horny"
+        },
+        {
+          "name": "how-are-you",
+          "title": "How are you"
+        },
+        {
+          "name": "how-to-pay-here-for",
+          "title": "How to pay here for"
+        },
+        {
+          "name": "i-am-real",
+          "title": "I am real"
+        },
+        {
+          "name": "i-am-surprised",
+          "title": "I am surprised"
+        },
+        {
+          "name": "i-dont-think-so",
+          "title": "I don't think so"
+        },
+        {
+          "name": "i-like-old",
+          "title": "I like old"
+        },
+        {
+          "name": "i-show-you-something",
+          "title": "I show you something"
+        },
+        {
+          "name": "i-think-you-like-it",
+          "title": "I think you like it"
+        },
+        {
+          "name": "im-a-doctor",
+          "title": "I'm a doctor"
+        },
+        {
+          "name": "its-open",
+          "title": "It's open"
+        },
+        {
+          "name": "learned-lesson",
+          "title": "Learned lesson"
+        },
+        {
+          "name": "listen-to-my-cock",
+          "title": "Listen to my cock"
+        },
+        {
+          "name": "listen-to-my",
+          "title": "Listen to my"
+        },
+        {
+          "name": "lolipop",
+          "title": "Lollipop"
+        },
+        {
+          "name": "my-likes-your-body",
+          "title": "My ... likes your body"
+        },
+        {
+          "name": "no-money",
+          "title": "No money"
+        },
+        {
+          "name": "no-vegonaluto",
+          "title": "No vegonalito"
+        },
+        {
+          "name": "no",
+          "title": "No"
+        },
+        {
+          "name": "nonono-sir",
+          "title": "No no no sir"
+        },
+        {
+          "name": "oh-oh",
+          "title": "Oohh ohhh"
+        },
+        {
+          "name": "oh",
+          "title": "Ohh"
+        },
+        {
+          "name": "pregnant",
+          "title": "Pregnant"
+        },
+        {
+          "name": "say-hello",
+          "title": "Say hello"
+        },
+        {
+          "name": "suck-a",
+          "title": "Suck a ..."
+        },
+        {
+          "name": "take-a-look-at-you",
+          "title": "Take a look at you"
+        },
+        {
+          "name": "that-is-my-daughter",
+          "title": "That is my daughter"
+        },
+        {
+          "name": "very-dangaroes",
+          "title": "Very dangaroes"
+        },
+        {
+          "name": "very-good-student",
+          "title": "Very good student"
+        },
+        {
+          "name": "very-special",
+          "title": "Very special"
+        },
+        {
+          "name": "virgin",
+          "title": "Virgin"
+        },
+        {
+          "name": "what-are-you-doing-doctor",
+          "title": "What are you doing doctor"
+        },
+        {
+          "name": "what",
+          "title": "What"
+        },
+        {
+          "name": "yes-yes-yes",
+          "title": "Yes yes yes"
+        },
+        {
+          "name": "yes",
+          "title": "Yes"
+        },
+        {
+          "name": "you-ask-no-money",
+          "title": "You ask no money"
+        },
+        {
+          "name": "you-fck-everybody",
+          "title": "You ... everybody"
+        },
+        {
+          "name": "your-bike",
+          "title": "Your bike"
+        },
+        {
+          "name": "your-daughter-has",
+          "title": "Your daughter has"
+        }
     ]
   },
   {
