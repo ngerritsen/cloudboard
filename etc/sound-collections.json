@@ -1899,6 +1899,10 @@
     "title": "Other",
     "sounds": [
       {
+        "name": "gtst-lead",
+        "title": "GTST"
+      },
+      {
         "name": "sound-of-da-police",
         "title": "Sound of da police"
       },
