@@ -1965,7 +1965,19 @@
       {
         "name": "don-t-have-sex",
         "title": "Don't have sex with your ex"
-      }
+      },
+      {
+        "name": "ham-and-eggs",
+        "title": "Hamandeggs"
+      },
+      {
+        "name": "english-do-you-speak-it",
+        "title": "English, do you speak it"
+      },
+      {
+        "name": "royal-with-cheese",
+        "title": "Royal with cheese"
+      },
     ]
   }
 ]
