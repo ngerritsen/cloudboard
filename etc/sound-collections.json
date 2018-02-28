@@ -931,6 +931,32 @@
     ]
   },
   {
+    "name": "jeroen",
+    "title": "Jeroen",
+    "sounds": [
+      {
+        "name": "doe-normaal-gek",
+        "title": "doe-normaal-gek"
+      },
+      {
+        "name": "haal-die-autos-weg",
+        "title": "haal-die-autos-weg"
+      },
+      {
+        "name": "jeroen",
+        "title": "jeroen"
+      },
+      {
+        "name": "pas-nou-op-met-dat-vuur",
+        "title": "pas-nou-op-met-dat-vuur"
+      },
+      {
+        "name": "wat-de-fok",
+        "title": "wat-de-fok"
+      }
+    ]
+  },
+  {
     "name": "broccoli-meneer",
     "title": "Broccoli meneer",
     "sounds": [
