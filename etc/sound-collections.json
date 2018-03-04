@@ -1158,7 +1158,7 @@
       },
       {
         "name": "klootviool-ik-douw-babi-pangpang-in-je-reet-(44100-hz)",
-        "title": "Klootviool ik douw babi pangpang in je reet (44100 Hz)"
+        "title": "Klootviool ik douw babi pangpang in je reet"
       },
       {
         "name": "klootviool-wat-doe-je",
@@ -1166,7 +1166,7 @@
       },
       {
         "name": "lekkah",
-        "title": "Lekkah"
+        "title": "Lekkâh"
       },
       {
         "name": "met-je-pratende-auto",
@@ -1182,7 +1182,7 @@
       },
       {
         "name": "vet-dimme-shake-it-(44100-hz)",
-        "title": "Vet dimme shake it (44100 Hz)"
+        "title": "Vet dimme shake it"
       },
       {
         "name": "waar-heb-jij-nou-weer-last-van-kut",
@@ -1231,7 +1231,7 @@
       },
       {
         "name": "maar-ik-bats-wel-met-je-moeder-(44100-hz)",
-        "title": "Maar ik bats wel met je moeder (44100 Hz)"
+        "title": "Maar ik bats wel met je moeder"
       },
       {
         "name": "met-je-hoofd",
@@ -1239,7 +1239,7 @@
       },
       {
         "name": "michael-wat-is-dit-(44100-hz)",
-        "title": "Michael wat is dit (44100 Hz)"
+        "title": "Michael wat is dit"
       },
       {
         "name": "moaan-wat-heb-ik-da-gemist-zeg",
@@ -1251,7 +1251,7 @@
       },
       {
         "name": "vet-goed-nummer-opzetten-michael-(44100-hz)",
-        "title": "Vet goed nummer opzetten michael (44100 Hz)"
+        "title": "Vet goed nummer opzetten michael"
       },
       {
         "name": "wat-mot-je-kut",
@@ -1263,7 +1263,7 @@
       },
       {
         "name": "effe-lekker-peukie-rooke-(44100-hz)",
-        "title": "effe lekker peukie rooke (44100 Hz)"
+        "title": "effe lekker peukie rooke"
       }
     ]
   },{
@@ -1361,7 +1361,7 @@
       },
       {
         "name": "hahaaa-(44100-hz)",
-        "title": "Hahaaa (44100 Hz)"
+        "title": "Hahaaa"
       },
       {
         "name": "he-adriaan-ik-zie-de-dildo",
@@ -1479,7 +1479,7 @@
     ]
   },{
     "name": "mastermovies-staarwars",
-    "title": "Mastermovies - Starwars",
+    "title": "Mastermovies - Staarwars",
     "sounds": [
       {
         "name": "ahhh-fok",
@@ -1589,7 +1589,7 @@
       },
       {
         "name": "ich-bin-macho-(44100-hz)",
-        "title": "Ich bin Macho (44100 Hz)"
+        "title": "Ich bin Macho"
       },
       {
         "name": "ich-hab-een-scheitprobleem",
@@ -1597,11 +1597,11 @@
       },
       {
         "name": "ich-will-ein-macho-mann-worden-(44100-hz)",
-        "title": "Ich will ein macho mann worden (44100 Hz)"
+        "title": "Ich will ein macho mann worden"
       },
       {
         "name": "macho-bv-(44100-hz)",
-        "title": "Macho bv (44100 Hz)"
+        "title": "Macho bv"
       },
       {
         "name": "mit-die-gewehr-bin-ich-macho",
@@ -1613,11 +1613,11 @@
       },
       {
         "name": "spater-(44100-hz)",
-        "title": "Spater (44100 Hz)"
+        "title": "Späterrr"
       },
       {
         "name": "supertoll-(44100-hz)",
-        "title": "Supertoll (44100 Hz)"
+        "title": "Supertoll"
       },
       {
         "name": "toeter",
@@ -1632,8 +1632,76 @@
         "title": "Vieze gothic"
       }
     ]
-  },
-  {
+  },{
+    "name": "mastermovies-saving-private-henk",
+    "title": "Mastermovies - Saving Private Henk",
+    "sounds": [
+      {
+        "name": "5-pizzas-tafel-3-nu-ophaluhhhh",
+        "title": "5 pizza's tafel 3 nu ophaluhhhh"
+      },
+      {
+        "name": "das-bratwurst",
+        "title": "Das bratwurst"
+      },
+      {
+        "name": "die-henk-waar-je-nog-geld-van-krijgt",
+        "title": "Die henk waar je nog geld van krijgt"
+      },
+      {
+        "name": "echt-waar",
+        "title": "Echt waar"
+      },
+      {
+        "name": "ga-nu-gelijk-een-geweer-zoeken",
+        "title": "Ga nu gelijk een geweer zoeken"
+      },
+      {
+        "name": "he-henk",
+        "title": "Hé Henk!"
+      },
+      {
+        "name": "he-wallie-neem-voor-mij-ook-een-donut-mee",
+        "title": "He wallie neem voor mij ook een donut mee"
+      },
+      {
+        "name": "henk-zoeken-want-ik-kreeg-nog-een-heleboel-geld-van-hem",
+        "title": "Henk zoeken want ik kreeg nog een heleboel geld van hem"
+      },
+      {
+        "name": "ik-wil-graven",
+        "title": "Ik wil graven"
+      },
+      {
+        "name": "ja-jij-ook-komuhh",
+        "title": "Ja jij ook komuhh"
+      },
+      {
+        "name": "kan-je-henk-vinden-ik-krijg-nog-geld-van-hem",
+        "title": "Kan je Henk vinden ik krijg nog geld van hem"
+      },
+      {
+        "name": "kent-iemand-hier-een-henk",
+        "title": "Kent iemand hier een henk?"
+      },
+      {
+        "name": "volgens-mij-waren-die-pizzas-een-beetje-bedorven",
+        "title": "Volgens mij waren die pizza's een beetje bedorven"
+      },
+      {
+        "name": "vuile-flikker-henk-die-gaat-echt-dood",
+        "title": "Vuile flikker henk die gaat echt dood"
+      },
+      {
+        "name": "wallie-waar-was-je-was-je-een-zandkasteel-aan-het-bouwen-ofzo",
+        "title": "Wallie waar was je was je een zandkasteel aan het bouwen ofzo"
+      },
+      {
+        "name": "wie",
+        "title": "Wie?"
+      }
+    ]
+  },{
     "name": "robbert",
     "title": "Robbert",
     "sounds": [
