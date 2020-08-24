@@ -1,16 +1,16 @@
 language: node_js
 node_js:
-  - "10"
+- '10'
 script:
-  - npm test
-  - npm run build
-  - echo $ADMIN_TOKEN > ADMIN_TOKEN
+- npm test
+- npm run build
+- echo $ADMIN_TOKEN > ADMIN_TOKEN
 deploy:
-  - provider: firebase
-    skip_cleanup: true
-    api_key:
-      secure: $FIREBASE_TOKEN
-  - provider: heroku
-    app: cloudboard-app
-    api_key:
-      secure: $HEROKU_API_KEY
+- provider: firebase
+  skip_cleanup: true
+  token:
+    secure: HeFaCaIbOOPrSjB1V9EL0HezhcAiadLuEtnbqy+Y2ePgHTYaA4NfAY3f5iJo0DXs1yBOar6ccNcumXWjgok99zcJq5B0azcDGXUs8ehGWYDzyGtyXdmKZNoq3zflXcswHsL4u7H1oZTeyh4CkuxS0V4UF1lvVJWYieaHS7baAfdgQXZN5WNJFetk/n0+O6nAn6QwFIqaU6SpMYmNEPDbUFbObdOIovtHXBcy49zFqR05XK0zXSQwVbRlzS1qcU4hXAHMsTp/jKInHucAstowbUa6v6FNz2Yyov2riEj2So0H6+Bk9W7y6Z7vPxnPU8W3Qkt1A8avXw8khA1xFArYTF+/xtwLCNHFfqsOBZoWmZGm3TPctQV/lLZe7lZ4OwFyZugb1buysiekQTDGkCidyN9FoB9D20nKofzFqrV/pJzl46Gb05Wr+GWetV10PcrsIker1tjomtzhlZL0kV1vUuzTpASbb2JsGHxim5gXc436Y3oa0kC1AponCkutbh33DHTHe7ks0SkLkVzx2bYSuWRg48t2fmSmupDLTnNrBwzej1GdlVytuslEqV7+IHqTMsblINcMoEDhvXyxcJNDgKy4lOrvAqKCoJEtRtwLFiFmgaXZLCVz0NmhacYkajxfN2WbtO2CfPM0flBfY1p+A/yMBA0o5kPY33OpvJf613E=
+- provider: heroku
+  app: cloudboard-app
+  api_key:
+    secure: "$HEROKU_API_KEY"
