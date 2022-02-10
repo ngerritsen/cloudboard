@@ -8,7 +8,7 @@ let adminToken = null;
 try {
   adminToken = fs.readFileSync(path.join(__dirname, '../ADMIN_TOKEN'), 'utf-8');
 } catch (e) {
-  // Do nothing
+  // Do nothing here
 }
 
 function eventHandler(socket) {

@@ -4,7 +4,7 @@
   "description": "A shared soundboard. �",
   "main": "server/index.js",
   "engines": {
-    "node": ">7"
+    "node": "10.x"
   },
   "scripts": {
     "start": "node server",
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ngerritsen/cloudboard.git"
+    "url": "https://gitlab.com/ngerritsen/cloudboard"
   },
   "keywords": [
     "soundboard",
@@ -28,9 +28,9 @@
   "author": "Niels Gerritsen",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ngerritsen/cloudboard/issues"
+    "url": "https://gitlab.com/ngerritsen/cloudboard/issues"
   },
-  "homepage": "https://github.com/ngerritsen/cloudboard#readme",
+  "homepage": "https://gitlab.com/ngerritsen/cloudboard#readme",
   "dependencies": {
     "prop-types": "^15.6.2",
     "react": "^16.4.2",
