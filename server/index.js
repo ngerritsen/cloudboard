@@ -5,7 +5,12 @@ const eventHandler = require('./event-handler');
 
 const server = createServer(); // eslint-disable-line new-cap
 const port = process.env.PORT || 8011;
-const io = socketIo(server);
+const io = socketIo(server, {
+  cors: {
+    origin: ['http://localhost:8080', 'https://cloudboard.nielsgerritsen.com'],
+    methods: ['GET', 'POST']
+  }
+});
 
 server.listen(port, err => {
   if (err) {

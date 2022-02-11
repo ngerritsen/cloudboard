@@ -22,7 +22,11 @@
   font-size: 2.2rem;
   font-family: 'Montserrat', sans-serif;
   margin: 0;
-  text-transform: lowercase
+  text-transform: lowercase;
+}
+
+.header__title-link {
+  text-decoration: none;
 }
 
 .header__board-name {

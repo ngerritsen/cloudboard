@@ -8,7 +8,7 @@ export default function Header({ board }) {
   return (
     <div className="header">
       <h1 className="header__title">
-        <Link to="/">Cloudboard</Link>
+        <Link to="/" className="header__title-link">Cloudboard</Link>
       </h1>
       {board &&
         <span className="header__board-name">

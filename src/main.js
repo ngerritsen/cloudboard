@@ -17,18 +17,14 @@ const rootEl = document.getElementById('root');
 ReactDOM.render(
   <Provider store={store}>
     <Router>
-      <Routes>
-        <Route path="/" element={
-          <Cloudboard>
-            <Routes>
-              <Route path="/" element={<BoardPicker />}/>
-              <Route path="/local" component={<Board />}/>
-              <Route path="/board/:board" component={<Board />}/>
-            </Routes>
-            <BoardChangeListener/>
-          </Cloudboard>
-        }/>
-      </Routes>
+      <Cloudboard>
+        <Routes>
+          <Route path="/" element={<BoardPicker />}/>
+          <Route path="/local" element={<Board localMode />}/>
+          <Route path="/board/:board" element={<Board />}/>
+        </Routes>
+        <BoardChangeListener/>
+      </Cloudboard>
     </Router>
   </Provider>,
   rootEl

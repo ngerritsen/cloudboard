@@ -1,5 +1,4 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
@@ -27,10 +26,9 @@ const Board = ({
   queue,
   remoteMode,
   removeFavorite,
-  toggleCollection
+  toggleCollection,
+  localMode
 }) => {
-  const location = useLocation();
-  const localMode = location.pathname.indexOf('/local') === 0;
   const hasTopMessage = remoteMode || localMode;
   const hasPlayer = !(remoteMode && !localMode);
 
@@ -91,7 +89,8 @@ Board.propTypes = {
   queue: PropTypes.func.isRequired,
   remoteMode: PropTypes.bool.isRequired,
   removeFavorite: PropTypes.func.isRequired,
-  toggleCollection: PropTypes.func.isRequired
+  toggleCollection: PropTypes.func.isRequired,
+  localMode: PropTypes.bool
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Board);
