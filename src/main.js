@@ -18,11 +18,13 @@ ReactDOM.render(
   <Provider store={store}>
     <Router>
       <Routes>
-        <Route path="/" render={({ location }) =>
-          <Cloudboard location={location}>
-            <Route path="/" exact component={BoardPicker}/>
-            <Route path="/local" component={Board}/>
-            <Route path="/board/:board" component={Board}/>
+        <Route path="/" element={
+          <Cloudboard>
+            <Routes>
+              <Route path="/" element={<BoardPicker />}/>
+              <Route path="/local" component={<Board />}/>
+              <Route path="/board/:board" component={<Board />}/>
+            </Routes>
             <BoardChangeListener/>
           </Cloudboard>
         }/>

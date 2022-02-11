@@ -1,4 +1,5 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
@@ -17,18 +18,18 @@ import BoardTopMessage from './board-top-message';
 
 import '../styles/board.scss';
 
-function Board({
+const Board = ({
   addFavorite,
   collections,
   favorites,
   isMobileBrowser,
-  location,
   playingSound,
   queue,
   remoteMode,
   removeFavorite,
   toggleCollection
-}) {
+}) => {
+  const location = useLocation();
   const localMode = location.pathname.indexOf('/local') === 0;
   const hasTopMessage = remoteMode || localMode;
   const hasPlayer = !(remoteMode && !localMode);
@@ -54,7 +55,7 @@ function Board({
       </div>
     </div>
   );
-}
+};
 
 function mapStateToProps({ queue, sounds, collections, favorites, remoteMode, isMobileBrowser }) {
   return {
@@ -83,9 +84,6 @@ Board.propTypes = {
   })).isRequired,
   favorites: PropTypes.array.isRequired,
   isMobileBrowser: PropTypes.bool.isRequired,
-  location: PropTypes.shape({
-    pathname: PropTypes.string.isRequired
-  }).isRequired,
   playingSound: PropTypes.shape({
     sound: PropTypes.string,
     collection: PropTypes.string
