@@ -1,11 +1,9 @@
 /* global ga */
 
 import shortid from 'shortid';
-import { Observable } from 'rxjs/Observable';
-import 'rxjs/add/operator/map';
-import 'rxjs/add/operator/filter';
-import 'rxjs/add/operator/do';
-import 'rxjs/add/operator/merge';
+import { Observable } from 'rxjs';
+import { map, filter, tap, merge, throttleTime, withLatestFrom } from 'rxjs/operators';
+import { ofType } from 'redux-observable';
 
 import { QUEUE, SOUND_THROTTLE } from '../constants';
 import { SERVER_PLAY } from '../../server/constants';
@@ -15,34 +13,38 @@ import { isInLocalMode } from '../helpers/routing';
 import { hasLocalStorage } from '../helpers/browser';
 import socket from '../socket';
 
-export default function queueEpic(action$, { getState }) {
-  const serverAction$ = serverSource()
-    .filter(event => event.board === getState().board || event.admin)
-    .map(({ id, collection, sound }) => play(id, collection, sound));
+export default function queueEpic(action$, $state) {
+  const serverAction$ = serverSource().pipe(
+    withLatestFrom($state),
+    filter(([event, state]) => event.board === state.board || event.admin),
+    map(([{ id, collection, sound }]) => play(id, collection, sound))
+  );
 
-  return action$
-    .filter(action => action.type === QUEUE)
-    .throttleTime(SOUND_THROTTLE)
-    .do(action => {
+  return action$.pipe(
+    ofType(QUEUE),
+    throttleTime(SOUND_THROTTLE),
+    tap(action => {
       const label = action.collection + ':' + action.sound;
       ga('send', 'event', 'Soundboard', 'play', label);
-    })
-    .map(action => ({
+    }),
+    map(action => ({
       action,
       localMode: isInLocalMode(),
       id: shortid.generate()
-    }))
-    .do(({ action, id, localMode }) => {
+    })),
+    withLatestFrom($state),
+    tap(([{ action, id, localMode }, state]) => {
       if (!localMode) {
-        broadcastSound(getState(), action, id);
+        broadcastSound(state, action, id);
       }
-    })
-    .filter(({ localMode }) => localMode)
-    .map(({ action, id }) => {
+    }),
+    filter(([{ localMode }]) => localMode),
+    map(([{ action, id }]) => {
       const { collection, sound } = action;
       return play(id, collection, sound);
-    })
-    .merge(serverAction$);
+    }),
+    merge(serverAction$)
+  );
 }
 
 function broadcastSound({ board }, action, id) {

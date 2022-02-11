@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
 import Header from './header';
-import { version } from '../../package.json';
+import pkg from '../../package.json';
 
 import '../styles/cloudboard.scss';
 
@@ -22,7 +22,7 @@ function Cloudboard({ children, remoteMode, board }) {
         >
           Niels Gerritsen
         </a>
-        {'\u00A0'}2017 - version {version}
+        {'\u00A0'}2017 - version {pkg.version}
       </p>
     </div>
   );

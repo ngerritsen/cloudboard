@@ -1,5 +1,5 @@
 default:
-  image: node:10
+  image: node:lts
   cache:
     paths:
       - node_modules/
@@ -18,5 +18,4 @@ test:
 deploy:
   stage: deploy
   script:
-    - git fetch --all --unshallow
     - git push -f https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git HEAD:refs/heads/master

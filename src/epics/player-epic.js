@@ -1,15 +1,15 @@
-import { Observable } from 'rxjs/Observable';
-import 'rxjs/add/operator/filter';
-import 'rxjs/add/operator/mergeMap';
+import { ofType } from 'redux-observable';
+import { Observable } from 'rxjs';
+import { mergeMap } from 'rxjs/operators';
 
 import { stopped } from '../actions/sound-actions';
 import { PLAY } from '../constants';
 import playAudio from '../audio-player';
 
 export default function playerEpic(action$) {
-  return action$
-    .filter(action => action.type === PLAY)
-    .flatMap(action => {
+  return action$.pipe(
+    ofType(PLAY),
+    mergeMap(action => {
       const { id, collection, sound } = action;
       const url = `/sounds/${collection}/${sound}.mp3`;
 
@@ -18,5 +18,6 @@ export default function playerEpic(action$) {
           observer.next(stopped(id));
         });
       });
-    });
+    })
+  );
 }

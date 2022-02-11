@@ -1,20 +1,19 @@
-import { Observable } from 'rxjs/Observable';
-import 'rxjs/add/observable/fromEvent';
-import 'rxjs/add/operator/map';
-import 'rxjs/add/operator/filter';
-import 'rxjs/add/operator/throttleTime';
+import { fromEvent } from 'rxjs';
+import { throttleTime, map, filter, withLatestFrom } from 'rxjs/operators';
 
 import { queue } from '../actions/sound-actions';
 import { SOUND_THROTTLE, keyCodeMap, favoriteKeyIndex } from '../constants';
 
-export default function keyEpic(_, { getState }) {
-  return Observable.fromEvent(document, 'keyup')
-    .throttleTime(SOUND_THROTTLE)
-    .map(event => keyCodeMap[event.which])
-    .map(key => {
+export default function keyEpic(_, $state) {
+  return fromEvent(document, 'keyup').pipe(
+    throttleTime(SOUND_THROTTLE),
+    map(event => keyCodeMap[event.which]),
+    withLatestFrom($state),
+    map(([key, state]) => {
       const index = favoriteKeyIndex.indexOf(key);
-      return getState().favorites[index];
-    })
-    .filter(favorite => favorite)
-    .map(favorite => queue(favorite.sound, favorite.collection));
+      return state.favorites[index];
+    }),
+    filter(Boolean),
+    map(favorite => queue(favorite.sound, favorite.collection))
+  );
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
 
 import store from './store';
@@ -17,14 +17,16 @@ const rootEl = document.getElementById('root');
 ReactDOM.render(
   <Provider store={store}>
     <Router>
-      <Route path="/" render={({ location }) =>
-        <Cloudboard location={location}>
-          <Route path="/" exact component={BoardPicker}/>
-          <Route path="/local" component={Board}/>
-          <Route path="/board/:board" component={Board}/>
-          <BoardChangeListener/>
-        </Cloudboard>
-      }/>
+      <Routes>
+        <Route path="/" render={({ location }) =>
+          <Cloudboard location={location}>
+            <Route path="/" exact component={BoardPicker}/>
+            <Route path="/local" component={Board}/>
+            <Route path="/board/:board" component={Board}/>
+            <BoardChangeListener/>
+          </Cloudboard>
+        }/>
+      </Routes>
     </Router>
   </Provider>,
   rootEl

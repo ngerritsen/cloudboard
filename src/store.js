@@ -1,5 +1,5 @@
 import { createStore, applyMiddleware, combineReducers } from 'redux';
-import createLogger from 'redux-logger';
+import { createLogger } from 'redux-logger';
 import { createEpicMiddleware, combineEpics } from 'redux-observable';
 
 import rawCollections from '../etc/sound-collections.json';
@@ -18,6 +18,7 @@ const { collections, sounds } = getSoundsAndCollectionsFromRawConfig(rawCollecti
 const favorites = getFavorites();
 const isMobileBrowser = checkIfMobileBrowser();
 const remoteMode = isMobileBrowser;
+const epicMiddleware = createEpicMiddleware();
 
 const reducer = combineReducers({
   ...reducers,
@@ -37,7 +38,7 @@ if (!isMobileBrowser) {
 }
 
 const middlewares = [
-  createEpicMiddleware(combineEpics(...epics))
+  epicMiddleware
 ];
 
 if (process.env.NODE_ENV === 'development') {
@@ -49,5 +50,7 @@ const store = createStore(
   { collections, remoteMode, favorites },
   applyMiddleware(...middlewares)
 );
+
+epicMiddleware.run(combineEpics(...epics));
 
 export default store;

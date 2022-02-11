@@ -1,10 +1,10 @@
 {
   "name": "cloudboard",
-  "version": "2.6.2",
+  "version": "2.7.0",
   "description": "A shared soundboard. �",
   "main": "server/index.js",
   "engines": {
-    "node": "10.x"
+    "node": ">16"
   },
   "scripts": {
     "start": "node server",
@@ -33,63 +33,43 @@
   "homepage": "https://gitlab.com/ngerritsen/cloudboard#readme",
   "dependencies": {
     "prop-types": "^15.6.2",
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2",
-    "react-redux": "^5.0.1",
-    "react-router-dom": "^4.3.1",
-    "redux": "^3.5.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.6",
+    "react-router-dom": "^6.2.1",
+    "redux": "^4.1.2",
     "redux-map-reducers": "^1.0.1",
-    "redux-observable": "^0.13.0",
-    "rxjs": "^5.1.0",
+    "redux-observable": "^2.0.0",
+    "rxjs": "^7.5.4",
     "shortid": "^2.2.6",
-    "socket.io": "^1.5.0",
-    "socket.io-client": "^2.1.1"
+    "socker.io": "^0.0.0-alpha-beta",
+    "socket.io": "^4.4.1",
+    "socket.io-client": "^4.4.1"
   },
   "devDependencies": {
-    "babel-core": "^6.13.2",
-    "babel-loader": "^6.2.4",
-    "babel-plugin-transform-object-rest-spread": "^6.20.2",
-    "babel-preset-env": "^1.1.4",
-    "babel-preset-react": "^6.11.1",
-    "concurrently": "^3.6.1",
-    "css-loader": "^0.26.1",
-    "eslint": "^5.2.0",
+    "@babel/core": "^7.17.2",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "babel-loader": "^8.2.3",
+    "concurrently": "^7.0.0",
+    "css-loader": "^6.6.0",
+    "eslint": "^8.8.0",
     "eslint-plugin-react": "^7.10.0",
-    "extract-text-webpack-plugin": "^1.0.1",
-    "fs-extra": "^1.0.0",
-    "html-webpack-plugin": "^2.22.0",
-    "json-loader": "^0.5.4",
-    "node-sass": "^4.1.1",
-    "nodemon": "^1.18.3",
+    "fs-extra": "^10.0.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.5.3",
+    "nodemon": "^2.0.15",
     "pre-commit": "^1.1.3",
-    "redux-logger": "^2.6.1",
-    "sass-loader": "^4.0.0",
-    "style-loader": "^0.13.1",
-    "webpack": "^1.13.1",
-    "webpack-dev-server": "^1.14.1"
+    "redux-logger": "^3.0.6",
+    "sass": "^1.49.7",
+    "sass-loader": "^12.4.0",
+    "webpack": "^5.68.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
   },
   "nodemonConfig": {
     "ignore": [
       "src/*"
     ]
-  },
-  "babel": {
-    "presets": [
-      [
-        "env",
-        {
-          "targets": {
-            "browsers": "last 2 versions"
-          }
-        }
-      ],
-      "react"
-    ],
-    "plugins": [
-      "transform-object-rest-spread"
-    ]
-  },
-  "pre-commit": [
-    "test"
-  ]
+  }
 }
